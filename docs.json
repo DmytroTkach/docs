@@ -18,7 +18,7 @@
         "icon": "play",
         "expanded": false,
         "pages": [
-          "documentation/user-manual",
+          "user-manual",
           "other-deployment-and-integration-guides",
           {
             "group": "Hardware Requirements",
