@@ -8,10 +8,10 @@
     "dark": "#15803D"
   },
   "styling": {
-  "eyebrows": "breadcrumbs"
+    "eyebrows": "breadcrumbs"
   },
   "interaction": {
-  "drilldown": true
+    "drilldown": true
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -27,7 +27,6 @@
             "group": "Hardware Requirements",
             "icon": "pencil",
             "pages": [
-              "user-manual/system-requirements/hardware-requirements",
               "user-manual/system-requirements/hardware-requirements/small-deployments-up-to-200-concurrent-sessions",
               "user-manual/system-requirements/hardware-requirements/medium-deployments-up-to-1-000-concurrent-sessions",
               "user-manual/system-requirements/hardware-requirements/large-deployments-up-to-10-000-concurrent-sessions"
