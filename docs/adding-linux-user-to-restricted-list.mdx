@@ -1,0 +1,39 @@
+---
+id: 501617
+title: Adding Linux User to Restricted List
+version: 1
+created: |
+  2019-06-05 18:45:37.260
+updated: |
+  2019-06-05 18:47:24.421
+status: current
+type: Page
+---
+
+**To add a user whose login into Linux Client computers must be approved by the administrator, do the following:**
+
+1. Log in to the Management Tool as a user with the [User management permission](#_Client_Permissions).
+
+2. Click the **Access Management** navigation link to the left.
+
+3. On the **Access Management** page, open the **Restricted Users** tab and then click **Add User**.
+
+4. In the **Add User** window, select the user type and define the following information:
+
+* For **Linux user**, define the user login.
+* For **Ekran user for secondary authentication**, define the user login.
+
+5. In the **Accessed Computer with Installed Client** group, select one of the following options:
+
+* For the Linux user and Ekran System user for secondary authentication, to restrict access to any computer, select **Any computer**.
+* For the Ekran System user for secondary authentication, to restrict access to specified computer or computer group, select **Selected computer** and define the domain name and the name of computer/computer group in it.
+* For the Linux user and Ekran System user for secondary authentication, to restrict access to computers of the specific Client Group, select **Computers from Client Group** and define the Client Group.
+
+**NOTE: Access will be restricted only for the computers with the installed Clients.**
+
+6. In the **Restriction Type** group, select the **Always require administrator’s approval by email on login** option.
+
+7. Click **Save**.
+
+8. The user is added to the grid. During the next login, they will be able to start working with the Linux Client computers only with the approval of the administrator.
+

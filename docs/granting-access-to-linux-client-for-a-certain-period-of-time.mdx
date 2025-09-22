@@ -1,0 +1,39 @@
+---
+id: 501645
+title: Granting Access to Linux Client for a Certain Period of Time
+version: 1
+created: |
+  2019-06-05 18:49:40.197
+updated: |
+  2019-06-05 18:51:10.979
+status: current
+type: Page
+---
+
+**To add a user whose login into Linux Client computers must be allowed only during a certain period of time** **out of which the administrator’s approval on login will be required, do the following:**
+
+1. Log in to the Management Tool as a user with the [User management permission](#_Client_Permissions).
+
+2. Click the **Access Management** navigation link to the left.
+
+3. On the **Access Management** page, open the **Restricted Users** tab and then click **Add User**.
+
+4. In the **Add User** window, in the **User with Restricted Access Rights** group, select the user type and define the following information:
+
+* For **Linux user**, define the user login.
+* For **Ekran user for secondary authentication**, define the user login.
+
+5. In the **Accessed Computer with Installed Client** group, select one of the following options:
+
+* For the Linux user and Ekran System user for secondary authentication, to restrict access to any computer, select **Any computer**.
+* For the Ekran System user for secondary authentication, to restrict access to a specified computer or computer group, select **Selected computer** and define the domain name and the name of computer/computer group in it.
+* For the Linux user and Ekran System user for secondary authentication, to restrict access to computers of the specific Client Group, select **Computers from Client Group** and define the Client Group.
+
+**NOTE: Access will be restricted only for the computers with the installed Clients.**
+
+6. In the **Restriction Type** group, select **Allow access without administrator’s approval** and define the dates, weekdays, and time during which the access to the Linux Client computers is allowed without administrator’s approval.
+
+7. Click **Save**.
+
+8. The user is added to the grid. During the next login, they will be able to start working with the Linux Client computers without administrator’s approval only during the defined time period. If the user starts working with the Linux Client computer out of the defined time period, the approval of the administrator will be required.
+

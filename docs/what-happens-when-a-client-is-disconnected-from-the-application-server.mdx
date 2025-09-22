@@ -1,0 +1,18 @@
+---
+id: 543742
+title: - What Happens when a Client is Disconnected from the Application Server?
+version: 1
+created: |
+  2022-03-09 13:31:22.348
+updated: |
+  2022-03-09 13:31:22.348
+status: current
+type: Page
+---
+
+Whenever there is no connection to the Ekran System Application Server, the Ekran System Client stores its monitored data locally, and automatically sends it to the Application Server as soon as the connection is restored.
+
+By default, the size of the local cache is 500MB, but can be increased as required.
+
+To increase the cache size, open the **Client Management** page, and click on the name of the Client machine required, and then on the **Editing Client** page, select the **Monitoring[Windows/macOS]** tab, and scroll down to the **Advanced Options** section where the required size of the local cache can be configured by changing the value in the **Offline Cache Size (MB)** field.
+

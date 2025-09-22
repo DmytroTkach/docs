@@ -1,0 +1,50 @@
+---
+id: 491575
+title: Moving Binary Data to a Shared or Local Folder
+version: 1
+created: |
+  2019-07-08 10:38:08.024
+updated: |
+  2021-07-15 17:35:37.844
+status: draft
+type: Page
+---
+
+If required, you can store binary data received from Clients in a shared or local folder on your computer. This might be necessary for storing large amounts of data.
+
+This feature has the following limitations:
+
+• Shared Folders on mapped and mounted disks cannot be used for storing binary data.
+
+• After you choose to store binary data in a shared folder instead of the MS SQL database, screen captures which already exist will no longer be displayed (only the metadata will be available for them). New screen captures that are recorded will be displayed.
+
+**NOTE:** **When running the EkranServer service under a user account** **(rather than** **under** **a** **Local** **System account****)****, make sure** **you** **assign the required permissions to this user account****.**
+
+**NOTE: If the folder for storing binary data is not accessible for some reason, the monitoring data will** **instead** **be written to the local cache****,** **and** **will be** **automatically sent to the Application Server as soon as the connection with the folder is restored. You can view information about error events on the Health Monitoring page.**
+
+**To move binary data to a shared folder, do the following**:
+
+1. Stop the Application Server by clicking **Stop** in the context menu of the **Ekran System Server** icon in the Windows System Tray, or find the **EkranServer** service in the Task Manager, and click **Stop**.
+
+2. In the **Registry Editor** window, click **Edit > New > String value** and add a new value:
+
+• Value type: **String**
+
+• Value name: **StorageDirectory**
+
+• Value data: the shared folder location in the format: **\\<computer IP>\<folder path>** or **\\<computer name>\<folder path>**
+
+3. To access the binary data in the shared folder from a computer other than the Application Server, do the following:
+
+• Open **Computer Management**.
+
+• In the **Computer Management** window, open **Services and Applications > Services**.
+
+• In the **Services** pane, find the **EkranServer** service, right-click on it, and select **Properties** in the context menu.
+
+• In the **EkranServer Properties** window, select the **Log On** tab.
+
+• On the **Log On** tab, select the **This account** option, specify the credentials for the **EkranServer** service to start under, and click **Apply**. Make sure the specified user has administrator permissions or permissions to start/stop the **EkranServer** service on your Application Server machine, and has read/write permissions for the shared folder on the computer where this folder is located.0
+
+4. Restart the **EkranServer** service to continue working with the program.
+

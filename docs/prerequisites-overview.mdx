@@ -1,0 +1,30 @@
+---
+id: 505653
+title: Prerequisites Overview
+version: 5
+created: |
+  2019-06-03 11:09:07.083
+updated: |
+  2019-07-08 10:58:04.369
+status: current
+type: Page
+---
+
+The following prerequisites are necessary for successful installation of the Management Tool. For Windows 7, it is important that you follow these steps in the correct order.
+
+**To be able to install the Management Tool, you need to:**
+
+1. [Turn on the Internet Information Service](https://documentation.ekransystem.com/pages/viewpage.action?pageId=1573167).
+
+2. [Install .NET Framework.](https://documentation.ekransystem.com/display/DOC/Installing+.NET+Framework)
+
+3. [Configure](https://documentation.ekransystem.com/pages/viewpage.action?pageId=1573188) the Internet Information Service.
+
+4. [Generate a self-signed certificate](https://documentation.ekransystem.com/display/DOC/Generating+Self-Signed+Certificate) or [import a purchased SSL certificate](https://documentation.ekransystem.com/display/DOC/Importing+Trusted+Certificate) issued for the computer, on which the Management Tool will be installed.
+
+5. [Add the certificate to the Trusted Root Certification Authorities](https://documentation.ekransystem.com/display/DOC/Adding+Certificate+to+Trusted+Root+Certification+Authorities) on the computer, on which the Management Tool will be installed. Otherwise, a certificate error will be displayed in your browser when opening the Management Tool.
+
+6. [Set HTTPS binding for a default web site](https://documentation.ekransystem.com/display/DOC/Setting+HTTPS+Binding+for+a+Default+Website) (or any other IIS site).
+
+**NOTE: If you already have a certificate generated for the computer on which the Management Tool will be installed, you can skip certificate generation step and use an existing certificate.**
+

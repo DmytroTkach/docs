@@ -1,0 +1,20 @@
+---
+id: 492010
+title: Encryption of Other Data
+version: 1
+created: |
+  2019-08-03 12:14:12.946
+updated: |
+  2019-08-03 12:15:16.332
+status: draft
+type: Page
+---
+
+The **initial vectors for the time-based one-time passwords** (**TOTP)** are encrypted in the database with the Ekran Master Certificate.
+
+The Ekran System **internal users’ passwords** are stored as SHA-256 hash values.
+
+Secrets with credentials of privileged accounts are encrypted with AES-256.
+
+**The results of Forensic Export** are encrypted with RSA-1024.
+

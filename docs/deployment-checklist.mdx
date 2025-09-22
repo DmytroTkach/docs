@@ -1,0 +1,39 @@
+---
+id: 505376
+title: Deployment Checklist
+version: 4
+created: |
+  2019-05-30 17:03:28.487
+updated: |
+  2021-05-21 11:57:45.245
+status: current
+type: Page
+---
+
+The Ekran System installation consists of several steps**:**
+
+1. [Installing the Server](https://documentation.ekransystem.com/display/DOC/Installing+the+Server): To deploy the system, first of all, you need to install the Server. The Server is used to store and process all records sent by the Clients hosted on the remote computers. During the Server installation, you can [select the type of the database](https://documentation.ekransystem.com/display/DOC/Database+Types+Comparison) and define administrator credentials.
+
+**NOTE: You can deploy the Ekran System in the High Availability mode, which allows you to work with multiple Server instances in the Network Load Balancer cluster.** **This would provide a high level of operational performance, which allows minimizing downtime and service interruptions.** **Please refer to the High Availability Deployment Guide for more information.**
+
+2. [Completing Management Tool installation prerequisites](https://documentation.ekransystem.com/display/DOC/Management+Tool+Installation+Prerequisites): To install and run the Management Tool, you need to [turn on the Internet Information Service](https://documentation.ekransystem.com/pages/viewpage.action?pageId=1573167) on your computer, add the [self-signed](https://documentation.ekransystem.com/display/DOC/Generating+Self-Signed+Certificate) or [trusted certificate](https://documentation.ekransystem.com/display/DOC/Importing+Trusted+Certificate) to the Trusted Root Certification Authorities and [set HTTPS binding for a default web site](https://documentation.ekransystem.com/display/DOC/Setting+HTTPS+Binding+for+a+Default+Website) (or any other IIS site).
+
+3. [Installing the Management Tool](https://documentation.ekransystem.com/display/DOC/Installing+the+Management+Tool): The Management Tool is used to manage Users, Clients, Alerts, and Database, as well as to view the monitored data received from Clients. Connection with the Server is required for the Management Tool to operate.
+
+4. [Activating serial keys](https://documentation.ekransystem.com/display/DOC/Activating+Serial+Keys+Online) ([adding activated serial keys](https://documentation.ekransystem.com/display/DOC/Adding+Activated+Serial+Keys+Offline)): To be able to receive data from the Clients, you need to license the Clients by activating purchased serial keys. You can also activate an [Enterprise serial key](https://documentation.ekransystem.com/display/DOC/About+Serial+Keys) to get access to the enterprise features of the Ekran System during the unlimited period of time.
+
+5. Installing Clients:
+
+* [Installing Windows Clients](https://documentation.ekransystem.com/display/DOC/Installing+Windows+Clients): The Windows Clients are usually installed remotely via the Management Tool. A Windows Client can be installed on any computer in the network.
+
+  Please note that [several conditions](https://documentation.ekransystem.com/display/DOC/Setting+up+Environment+for+Remote+Installation) have to be met for successful remote Client installation**.**
+
+* [Installing macOS Clients](https://documentation.ekransystem.com/display/DOC/Installing+macOS+Client): The macOS Clients are installed locally.
+* [Installing Linux Clients](https://documentation.ekransystem.com/display/DOC/Installing+Linux+Client): The Linux Clients are installed locally.
+
+6. Installing the Tray Notifications application: The Tray Notifications application can be installed on any computer and as long as there is the connection to the Server; the Tray Notifications application displays notifications on all alert events received from Clients.
+
+For more information, see the Tray Notifications application help file.
+
+After installing all the system components, Ekran System is considered deployed and all its features become available.
+

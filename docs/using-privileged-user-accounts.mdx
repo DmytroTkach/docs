@@ -1,0 +1,30 @@
+---
+id: 501478
+title: Using Privileged User Accounts
+version: 1
+created: |
+  2019-06-05 17:20:58.022
+updated: |
+  2019-06-05 17:22:28.161
+status: current
+type: Page
+---
+
+**To use the Privileged Accounts feature, do the following:**
+
+1. Make sure that you have Enterprise license activated.
+
+2. [Configure the password vault](#_Password_Vault_Configuration).
+
+**NOTE: You can use MS SQL Express for a password vault.**
+
+3. On the **Configuration** page, **LDAP Target** tab, [define the administrator credentials](#_Defining_Domain_Administrator) for the domain in which shared accounts will be created. These credentials will be encrypted and saved to the password vault.
+
+4. Select the **Enable jump server mode** option for the Client with the assigned Terminal Server license.
+
+5. [Add a privileged user.](#_Adding_Privileged_User)
+
+6. The shared account for access to the defined computer/computer group will be automatically created in the selected domain. Its credentials will be stored in the password vault in the encrypted format.
+
+7. Now, the user can [work with the protected computers using the remote desktop connection under the created privileged user account](#_Using_Privileged_Account).
+
