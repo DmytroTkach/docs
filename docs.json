@@ -18,14 +18,12 @@
     "groups": [
       {
         "group": "User Manual",
-        "icon": "play",
         "expanded": false,
         "pages": [
           "user-manual",
           "other-deployment-and-integration-guides",
           {
             "group": "Hardware Requirements",
-            "icon": "pencil",
             "pages": [
               "user-manual/system-requirements/hardware-requirements/small-deployments-up-to-200-concurrent-sessions",
               "user-manual/system-requirements/hardware-requirements/medium-deployments-up-to-1-000-concurrent-sessions",
