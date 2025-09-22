@@ -10,6 +10,9 @@
   "styling": {
   "eyebrows": "breadcrumbs"
   },
+  "interaction": {
+  "drilldown": true
+  },
   "favicon": "/favicon.svg",
   "navigation": {
     "groups": [
@@ -38,30 +41,5 @@
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",
     "syteca": "/logo/Syteca-logo-color_small.png"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   }
 }
