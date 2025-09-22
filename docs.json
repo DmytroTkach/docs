@@ -9,15 +9,21 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guides",
-        "groups": [
+        "group": "User Manual",
+        "icon": "play",
+        "expanded": false,
+        "pages": [
+          "documentation/user-manual",
           {
-            "group": "Documentation",
+            "group": "Hardware Requirements",
+            "icon": "pencil",
             "pages": [
-              "index",
-              "documentation/user-manual"
+              "documentation/user-manual/hardware-requirements",
+              "documentation/user-manual/small-deployments-up-to-200-concurrent-sessions",
+              "documentation/user-manual/medium-deployments-up-to-1-000-concurrent-sessions",
+              "documentation/user-manual/large-deployments-up-to-10-000-concurrent-sessions"
             ]
           }
         ]
